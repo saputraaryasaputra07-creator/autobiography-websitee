@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Saputra - Portofolio & Biografi</title>
+    <!-- Menggunakan Tailwind CSS untuk styling yang cepat dan modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animasi sederhana untuk elemen yang muncul */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600">AS.</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-slate-600 hover:text-blue-600 transition">Beranda</a>
+                    <a href="#tentang" class="text-slate-600 hover:text-blue-600 transition">Tentang Saya</a>
+                    <a href="#pendidikan" class="text-slate-600 hover:text-blue-600 transition">Pendidikan</a>
+                    <a href="#kontak" class="text-slate-600 hover:text-blue-600 transition">Kontak</a>
+                </div>
+                <!-- Tombol menu mobile -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <a href="#beranda" class="block px-4 py-2 text-slate-600 hover:bg-slate-50">Beranda</a>
+            <a href="#tentang" class="block px-4 py-2 text-slate-600 hover:bg-slate-50">Tentang Saya</a>
+            <a href="#pendidikan" class="block px-4 py-2 text-slate-600 hover:bg-slate-50">Pendidikan</a>
+            <a href="#kontak" class="block px-4 py-2 text-slate-600 hover:bg-slate-50">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero / Beranda -->
+    <section id="beranda" class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto min-h-screen flex items-center">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
+            <div class="md:w-1/2 text-center md:text-left animate-fade-in">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase mb-2">Halo, Selamat Datang!</h2>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Arya Saputra</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Seorang individu yang bersemangat dalam belajar, berkembang, dan menciptakan hal-hal baru yang bermanfaat. Jelajahi situs ini untuk mengenal saya lebih jauh.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#kontak" class="px-8 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-center">
+                        Hubungi Saya
+                    </a>
+                    <a href="#tentang" class="px-8 py-3 bg-white text-slate-700 border border-slate-200 font-medium rounded-full hover:bg-slate-50 transition text-center">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-fade-in" style="animation-delay: 0.2s;">
+                <!-- Placeholder Foto Profil -->
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-100 rounded-full blur-xl opacity-70"></div>
+                    <img src="https://ui-avatars.com/api/?name=Arya+Saputra&size=512&background=2563eb&color=fff&font-size=0.33" alt="Foto Arya Saputra" class="relative w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-white shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="text-xl font-bold text-slate-800 mb-4">Informasi Pribadi</h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-center gap-3">
+                                <strong>Nama:</strong> Arya Saputra
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <strong>Asal:</strong> Indonesia
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <strong>Hobi:</strong> Membaca, Teknologi, Olahraga
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-4">Mengenal Lebih Dekat</h3>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Perkenalkan, saya Arya Saputra. Saya memiliki minat yang besar terhadap perkembangan dunia modern, baik itu teknologi, bisnis, maupun kreativitas. Saya percaya bahwa setiap hari adalah kesempatan baru untuk belajar dan mengembangkan diri menjadi versi yang lebih baik.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Dalam pekerjaan maupun kehidupan sehari-hari, saya selalu mengedepankan integritas, kerja keras, dan kolaborasi. Saya senang bekerja sama dalam tim dan bertukar pikiran untuk memecahkan berbagai masalah.
+                    </p>
+                    
+                    <h4 class="font-bold text-slate-800 mb-3">Keahlian & Minat:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium border border-blue-100">Pemecahan Masalah</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium border border-blue-100">Kerja Tim</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium border border-blue-100">Komunikasi</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium border border-blue-100">Kreativitas</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium border border-blue-100">Teknologi Informasi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pendidikan -->
+    <section id="pendidikan" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Riwayat Pendidikan</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Item Pendidikan 1 -->
+                <div class="relative pl-8 sm:pl-0">
+                    <div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-slate-200"></div>
+                    <div class="flex flex-col sm:flex-row items-center justify-between w-full">
+                        <div class="sm:w-5/12 text-left sm:text-right mb-4 sm:mb-0 pr-0 sm:pr-8">
+                            <h3 class="text-xl font-bold text-slate-800">Universitas Contoh</h3>
+                            <p class="text-blue-600 font-medium">Gelar Sarjana - Jurusan</p>
+                            <p class="text-sm text-slate-500 mt-1">2020 - 2024</p>
+                        </div>
+                        <div class="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-slate-50 shadow"></div>
+                        <div class="sm:w-5/12 text-left pl-0 sm:pl-8">
+                            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm">
+                                <p class="text-slate-600 text-sm">Fokus pada pengembangan keahlian inti, aktif dalam berbagai organisasi kemahasiswaan, dan menyelesaikan proyek akhir dengan predikat memuaskan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Pendidikan 2 -->
+                <div class="relative pl-8 sm:pl-0">
+                    <div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-slate-200"></div>
+                    <div class="flex flex-col sm:flex-row-reverse items-center justify-between w-full">
+                        <div class="sm:w-5/12 text-left mb-4 sm:mb-0 pl-0 sm:pl-8">
+                            <h3 class="text-xl font-bold text-slate-800">SMA Negeri Contoh</h3>
+                            <p class="text-blue-600 font-medium">Jurusan Ilmu Pengetahuan</p>
+                            <p class="text-sm text-slate-500 mt-1">2017 - 2020</p>
+                        </div>
+                        <div class="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-slate-50 shadow"></div>
+                        <div class="sm:w-5/12 text-left sm:text-right pr-0 sm:pr-8">
+                            <div class="bg-white p-5 rounded-xl border border-slate-100 shadow-sm text-left">
+                                <p class="text-slate-600 text-sm">Menjadi ketua ekstrakurikuler, berpartisipasi dalam kompetisi akademik tingkat daerah, dan lulus dengan nilai yang sangat baik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Hubungi Saya</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Tertarik untuk berkolaborasi atau sekadar menyapa? Jangan ragu untuk mengirim pesan.</p>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
+                <form id="contactForm" onsubmit="event.preventDefault(); showMessage();">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Alamat Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Masukkan email Anda" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Pesan</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition shadow-md shadow-blue-200">
+                        Kirim Pesan
+                    </button>
+                    <!-- Pesan Notifikasi (Tersembunyi secara default) -->
+                    <div id="successMessage" class="hidden mt-4 p-4 bg-green-50 text-green-700 border border-green-200 rounded-lg text-center">
+                        Terima kasih! Pesan Anda telah berhasil dikirim. (Ini adalah simulasi)
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-8 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white mb-4">Arya Saputra</h2>
+            <div class="flex justify-center space-x-6 mb-6">
+                <!-- Sosial Media Links (Placeholder) -->
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">GitHub</a>
+            </div>
+            <p class="text-sm text-slate-500">
+                &copy; <span id="year"></span> Arya Saputra. Dibuat dengan antusias.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Sederhana -->
+    <script>
+        // Set tahun secara otomatis di footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Toggle Menu Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Tutup menu mobile ketika link di klik
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Tampilkan pesan sukses pada form
+        function showMessage() {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.classList.remove('hidden');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+
+            // Sembunyikan pesan setelah 3 detik
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
